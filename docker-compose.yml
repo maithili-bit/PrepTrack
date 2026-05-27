@@ -1,0 +1,36 @@
+version: '3.9'
+
+services:
+
+  backend:
+
+    build: ./server
+
+    ports:
+      - "5000:5000"
+
+    depends_on:
+      - postgres
+
+    environment:
+      DB_USER: postgres
+      DB_HOST: postgres
+      DB_NAME: preptrack_db
+      DB_PASSWORD: postgres
+      DB_PORT: 5432
+      JWT_SECRET: preptrack_secret_key
+
+
+  postgres:
+
+    image: postgres
+
+    restart: always
+
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: preptrack_db
+
+    ports:
+      - "5432:5432"
