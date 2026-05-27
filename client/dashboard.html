@@ -501,7 +501,7 @@ function logout(){
 async function loadQuestions(){
 
     const response = await fetch(
-        "http:// https://preptrack-8zrj.onrender.com/api/dsa/all",
+        "http://preptrack-8zrj.onrender.com/api/dsa/all",
         {
             headers:{
                 "Authorization": token
@@ -591,7 +591,7 @@ async (e) => {
 
 
     const response = await fetch(
-        "http:// https://preptrack-8zrj.onrender.com/api/dsa/add",
+        "http://preptrack-8zrj.onrender.com/api/dsa/add",
         {
             method:"POST",
 
@@ -626,7 +626,7 @@ async (e) => {
 async function deleteQuestion(id){
 
     await fetch(
-        `http:// https://preptrack-8zrj.onrender.com/api/dsa/delete/${id}`,
+        `http://preptrack-8zrj.onrender.com/api/dsa/delete/${id}`,
         {
             method:"DELETE",
 
@@ -647,7 +647,7 @@ async function deleteQuestion(id){
 async function loadJobs(){
 
     const response = await fetch(
-        "http:// https://preptrack-8zrj.onrender.com/api/jobs/all",
+        "http://preptrack-8zrj.onrender.com/api/jobs/all",
         {
             headers:{
                 "Authorization": token
@@ -741,7 +741,7 @@ async (e) => {
 
 
     const response = await fetch(
-        "http:// https://preptrack-8zrj.onrender.com/api/jobs/add",
+        "http://preptrack-8zrj.onrender.com/api/jobs/add",
         {
             method:"POST",
 
@@ -777,7 +777,7 @@ async (e) => {
 async function deleteJob(id){
 
     await fetch(
-        `http:// https://preptrack-8zrj.onrender.com/api/jobs/delete/${id}`,
+        `http://preptrack-8zrj.onrender.com/api/jobs/delete/${id}`,
         {
             method:"DELETE",
 
@@ -798,7 +798,7 @@ async function deleteJob(id){
 async function loadAnalytics(){
 
     const dsaResponse = await fetch(
-        "http:// https://preptrack-8zrj.onrender.com/api/dsa/all",
+        "http://preptrack-8zrj.onrender.com/api/dsa/all",
         {
             headers:{
                 "Authorization": token
@@ -810,7 +810,7 @@ async function loadAnalytics(){
 
 
     const jobResponse = await fetch(
-        "http:// https://preptrack-8zrj.onrender.com/api/jobs/all",
+        "http://preptrack-8zrj.onrender.com/api/jobs/all",
         {
             headers:{
                 "Authorization": token
